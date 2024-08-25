@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Transaction</title>
+</head>
+<body>
+    
+    <form action="/api/v1/account/transactions" method="post">
+        <label for="amount">amount: </label>
+        <input type="number" name="amount" id="amount" required>
+        <br>
+
+        <label for="date">date: </label>
+        <input type="date" name="date" id="date">
+        <br>
+
+        <label for="type">type: </label>
+        <select name="type" id="type" >
+            <option value="expense">expense</option>
+            <option value="income">income</option>
+        </select>
+        
+        <br>
+
+        <label for="description">description: </label>
+        <input type="text" name="description" id="description">
+        <br>
+
+        <label for="category">category: </label>
+        <select name="category" id="category">
+            <option value="food" >food</option>
+            <option value="travel">travel</option>
+            <option value="rent" >rent</option>
+        </select>
+        <br>
+
+        <button type="submit">Add</button>
+
+    </form>
+
+</body>
+</html>
