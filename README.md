@@ -1,4 +1,4 @@
-# Finance Tracker
+# Expense Tracker
 
 A web application to manage your personal finances by tracking income and expenses. Users can view their transactions, add new ones, and delete existing ones. The app also calculates the total income and expenses for the current month.
 
